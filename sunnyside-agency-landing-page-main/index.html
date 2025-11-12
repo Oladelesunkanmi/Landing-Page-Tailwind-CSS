@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <div class="bg-[url('./images/mobile/image-header.jpg')] bg-cover bg-center bg-no-repeat h-screen w-full
+  lg:bg-[url('./images/desktop/image-header.jpg')]">
+    <header>
+      <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img src="./images/logo.svg" alt="" class="h-8 w-auto" />
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+  <span class="sr-only">Open main menu</span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="w-6 h-6">
+    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+</button>
+
+        </div>
+        <el-popover-group class="hidden lg:flex lg:gap-x-12">
+          <div class="relative flex items-center gap-x-8">
+            <a href="#" class="text-sm font-semibold text-white">About</a>
+            <a href="#" class="text-sm font-semibold text-white">Services</a>
+            <a href="#" class="text-sm font-semibold text-white">Projects</a>
+            <button class="text-sm font-semibold text-black rounded-md bg-white p-2">CONTACT</button>
+          </div>
+        </el-popover-group>
+
+      </nav>
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+              <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                  <img class="w-16" src="images/logo.svg" alt="" class="h-12 w-auto" />
+                </a>
+                <button type="button" command="close" commandfor="mobile-menu"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-400">
+                  <span class="sr-only">Close menu</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                    aria-hidden="true" class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div>
+                  <div class="py-6">
+
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Service</a>
+                    <a href="#"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Project</a>
+                  </div>
+                  <button class="text-sm font-semibold text-black rounded-md bg-white p-2">CONTACT</button>
+
+                </div>
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+    </header>
+
+    <!-- hero section -->
+    <section>
+      <div class="flex items-center justify-center text-center">
+        <h1 class="text-white text-6xl  lg:text-6xl uppercase font-bold mt-30">
+          We are creatives
+        </h1>
+      </div>
+      <div class="flex items-center justify-center mt-30">
+      <img src="./images/icon-arrow-down.svg" alt="">
+      </div>
+    </section>
+  </div>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 auto-rows-fr">
+    <!-- Text block -->
+    <div class="flex flex-col justify-center items-center p-0 w-full h-full bg-white">
+      <h2 class="text-3xl font-bold mb-4 px-6">Transform your brand</h2>
+      <p class="text-gray-600 max-w-md mb-6 px-6">
+        We are a full-service creative agency specializing in helping brands grow fast.
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+      <button class="uppercase text-black font-bold  hover:text-yellow-500 transition-colors duration-300">
+        Learn more
+      </button>
+    </div>
+
+    <!-- Image block -->
+    <div class="w-full h-full">
+      <img src="./images/desktop/image-transform.jpg" alt="transform image" class="w-full h-full object-cover">
+    </div>
+
+    <div class="w-full h-full">
+      <img src="./images/desktop/image-stand-out.jpg" alt="transform image" class="w-full h-full object-cover">
+    </div>
+
+    <div class="flex flex-col justify-center items-center p-0 w-full h-full bg-white">
+      <h2 class="text-3xl font-bold mb-4 px-6">Stand out to the right audience
+</h2>
+      <p class="text-gray-600 max-w-md mb-6 px-6">
+       Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+</p>
+      <button
+        class="uppercase text-black font-bold hover:text-base transition ml-6 mb-6">
+        Learn more
+      </button>
+    </div>
+
+    <div
+      class="flex flex-col justify-end items-center py-2 w-full h-full bg-white w-full h-full bg-[url('./images/desktop/image-graphic-design.jpg')] bg-cover">
+      <h3 class="text-3xl font-bold mb-3 py-6">Graphic design</h3>
+      <p class="text-gray-600 max-w-md mb-6 px-6">
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+        clients’ attention.
+      </p>
+
+    </div>
+
+
+    <div
+      class="flex flex-col justify-end items-center py-2 w-full h-full bg-white w-full h-full bg-[url('./images/desktop/image-photography.jpg')] bg-cover">
+      <h3 class="text-3xl font-bold mb-4 py-6"> Photography</h3>
+      <p class="text-gray-600 max-w-md mb-4 px-6">
+       Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+  </p>
+    </div>
+  </section>
+
+  <section class="bg-white py-8">
+    <h1 class="text-4xl font-bold text-center mb-12 text-gray-500 uppercase">Client Testimonials</h1>
+
+    <div class="flex flex-col md:flex-row gap-8 justify-center items-center">
+      <!-- Testimonial 1 -->
+      <div class="flex flex-col items-center bg-white p-6 rounded-lg  max-w-xs text-center">
+        <img src="./images/image-emily.jpg" alt="Emily" class="w-24 h-24 rounded-full object-cover mb-4">
+        <p class="text-gray-600 mb-4 font-semibold">
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+          hit.
+        </p>
+        <h3 class="text-xl font-bold mb-1">Emily R.</h3>
+        <p class="text-gray-500 text-sm">Marketing Director</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="flex flex-col items-center bg-white p-6 rounded-lg  max-w-xs text-center">
+        <img src="./images/image-thomas.jpg" alt="Emily" class="w-24 h-24 rounded-full object-cover mb-4">
+        <p class="text-gray-600 mb-4 font-semibold">
+       Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        </p>
+        <h3 class="text-xl font-bold mb-1">Thomas S.</h3>
+        <p class="text-gray-500 text-sm">Chief Operating Officerr</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="flex flex-col items-center bg-white p-6 rounded-lg  max-w-xs text-center">
+        <img src="./images/image-jennie.jpg" alt="Emily" class="w-24 h-24 rounded-full object-cover mb-4">
+        <p class="text-gray-600 mb-4 font-semibold">
+          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        </p>
+        <h3 class="text-xl font-bold mb-1"> Jennie F.</h3>
+        <p class="text-gray-500 text-sm">Business Owner</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex flex-wrap">
+    <div class="w-1/2 md:w-1/4">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk-bottles" class="w-full h-auto" />
+    </div>
+    <div class="w-1/2 md:w-1/4">
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="orange" class="w-full h-auto" />
+    </div>
+    <div class="w-1/2 md:w-1/4">
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="cone" class="w-full h-auto" />
+    </div>
+    <div class="w-1/2 md:w-1/4">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes" class="w-full h-auto" />
+    </div>
+  </section>
+
+
+  <footer class="h-full bg-sky-300 ">
+    <div class="flex items-center justify-center h-16">
+      <img src="./images/logo.svg" alt="Logo" class="h-8 mt-8" />
+    </div>
+    <div class="flex items-center gap-x-8 justify-center pt-10">
+      <a href="#" class="text-sm font-semibold text-black">About</a>
+      <a href="#" class="text-sm font-semibold text-black">Services</a>
+      <a href="#" class="text-sm font-semibold text-black">Projects</a>
+    </div>
+
+    <!-- icon div -->
+    <div class="flex items-center justify-center p-10 gap-x-4 h-16">
+      <img src="./images/icon-facebook.svg" alt="Facebook" class="w-4" />
+      <img src="./images/icon-instagram.svg" alt="icon-instagram" class="w-4" />
+      <img src="./images/icon-twitter.svg" alt="twitter-bird" class="w-4" />
+      <img src="./images/icon-pinterest.svg" alt="icon-pinterest" class="w-4" />
+    </div>
+
+  </footer>
+</body>
+
+</html>
