@@ -5,27 +5,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="bg-[url('./images/mobile/image-header.jpg')] bg-cover bg-center bg-no-repeat h-screen w-full
   lg:bg-[url('./images/desktop/image-header.jpg')]">
     <header>
-      <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
+      <nav aria-label="Global" class="mx-auto flex  items-center justify-between p-10 lg:px-8">
+        <div class="flex lg:flex-1 ">
+          <a href="#" class="px-0 md:px-10">
             <span class="sr-only">Your Company</span>
-            <img src="./images/logo.svg" alt="" class="h-8 w-auto" />
+            <img src="./images/logo.svg" alt="" class="h-7 md:h-8 w-auto" />
           </a>
         </div>
         <div class="flex lg:hidden">
           <button type="button" command="show-modal" commandfor="mobile-menu"
-        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
-  <span class="sr-only">Open main menu</span>
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="w-6 h-6">
-    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-  </svg>
-</button>
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+              class="w-6 h-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
 
         </div>
         <el-popover-group class="hidden lg:flex lg:gap-x-12">
@@ -33,7 +37,7 @@
             <a href="#" class="text-sm font-semibold text-white">About</a>
             <a href="#" class="text-sm font-semibold text-white">Services</a>
             <a href="#" class="text-sm font-semibold text-white">Projects</a>
-            <button class="text-sm font-semibold text-black rounded-md bg-white p-2">CONTACT</button>
+            <button class="text-sm font-semibold text-black rounded-full bg-white p-2">CONTACT</button>
           </div>
         </el-popover-group>
 
@@ -67,7 +71,7 @@
                     <a href="#"
                       class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Project</a>
                   </div>
-                  <button class="text-sm font-semibold text-black rounded-md bg-white p-2">CONTACT</button>
+                  <button class="text-sm font-semibold text-black rounded-full bg-white p-2">CONTACT</button>
 
                 </div>
               </div>
@@ -80,54 +84,61 @@
     <!-- hero section -->
     <section>
       <div class="flex items-center justify-center text-center">
-        <h1 class="text-white text-4xl  lg:text-6xl uppercase font-bold mt-30">
+        <h1 class="text-white font-[Fraunces] text-4xl md:text-6xl 2xl:text-7xl uppercase tracking-widest font-bold mt-25 md:mt-40 lg:mt-10 2xl:mt-20">
           We are creatives
         </h1>
       </div>
-      <div class="flex items-center justify-center mt-20">
-      <img src="./images/icon-arrow-down.svg" alt="">
+      <div class="flex items-center justify-center mt-25 md:mt-20 lg:mt-20 2xl:mt-30">
+        <img src="./images/icon-arrow-down.svg" alt="" class=" md:h-35 lg:h-40 2xl:h-40">
       </div>
     </section>
   </div>
 
   <section class="grid grid-cols-1 md:grid-cols-2 auto-rows-fr">
     <!-- Text block -->
-    <div class="flex flex-col justify-center items-center p-0 w-full h-full bg-white">
-      <h2 class="text-3xl text-center font-bold mb-4 px-6">Transform your brand</h2>
-      <p class="text-gray-600 text-center max-w-md mb-6 px-6">
-        We are a full-service creative agency specializing in helping brands grow fast.
-        Engage your clients through compelling visuals that do most of the marketing for you.
-      </p>
-      <button class="uppercase text-black font-bold  hover:text-yellow-500 transition-colors duration-300">
-        Learn more
-      </button>
-    </div>
+   
+      <div class="flex flex-col order-2 md:order-1 justify-center items-center p-0 w-full h-full bg-white">
+        <h2 class="text-3xl lg:text-5xl  text-center md:text-start font-bold font-[Fraunces] mb-4 px-10">Transform your <span class="hidden lg:inline"><br></span> brand</h2>
+        <p class="text-gray-600 text-sm lg:text-2xl md:text-base text-center md:text-start max-w-md mb-6 px-10  font-[burlow]">
+          We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+       <div class="flex justify-center">
+  <button class="font-bold uppercase text-black 
+               border-b-3 border-[hsl(7,99%,70%)] 
+               rounded pb-1 hover:border-[hsl(45,100%,50%)] transition-colors duration-300">
+    Learn More
+  </button>
+</div>
 
-    <!-- Image block -->
-    <div class="w-full h-full">
-      <img src="./images/desktop/image-transform.jpg" alt="transform image" class="w-full h-full object-cover">
-    </div>
+      </div>
 
-    <div class="w-full h-full">
+      <!-- Image block -->
+      <div class="w-full h-full order-1 md:order-2 ">
+        <img src="./images/desktop/image-transform.jpg" alt="transform image" class="w-full h-full object-cover">
+      </div>
+    
+
+    <div class="w-full h-full order-3">
       <img src="./images/desktop/image-stand-out.jpg" alt="transform image" class="w-full h-full object-cover">
     </div>
 
-    <div class="flex flex-col justify-center items-center p-0 w-full h-full bg-white">
-      <h2 class="text-3xl pt-10 text-center font-bold mb-4 px-6">Stand out to the right audience
-</h2>
-      <p class="text-gray-600 text-center max-w-md mb-6 px-6">
-       Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-</p>
-      <button
-        class="uppercase text-black font-bold hover:text-base transition ml-6 mb-6">
+    <div class="flex flex-col order-4 justify-center text-start items-center p-0 w-full h-full bg-white">
+      <h2 class="text-3xl lg:text-5xl  text-center md:text-start font-bold font-[Fraunces] mb-4 ">Stand out to the right <span class="hidden lg:inline"><br></span> audience
+      </h2>
+      <p class="text-gray-600 text-sm lg:text-2xl md:text-base text-start md:text-start max-w-md mb-6 px-10 md:px-0  font-[burlow]">
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll
+        build and extend your brand in digital places.
+      </p>
+      <button class="uppercase text-black font-bold hover:text-base transition ml-6 mb-6">
         Learn more
       </button>
     </div>
 
     <div
-      class="flex flex-col row-span-2 md:row-span-1 justify-end items-center py-2 w-full h-full bg-white w-full h-full bg-[url('./images/mobile/image-graphic-design.jpg')] lg:bg-[url('./images/desktop/image-graphic-design.jpg')] bg-center bg-cover">
-      <h3 class="text-3xl font-bold mb-3 py-6">Graphic design</h3>
-      <p class="text-gray-600 text-center max-w-md mb-6 px-6">
+      class="flex flex-col order-5 row-span-2 md:row-span-1 justify-end items-center py-2 w-full h-full bg-white w-full h-full bg-[url('./images/mobile/image-graphic-design.jpg')] lg:bg-[url('./images/desktop/image-graphic-design.jpg')] bg-center bg-cover">
+      <h3 class="text-3xl text-center md:text-start font-bold font-[Fraunces] mb-4 px-10">Graphic design</h3>
+      <p class="text-gray-600  text-sm md:text-base text-center md:text-start max-w-md mb-6 px-10 font-[burlow]">
         Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
         clients’ attention.
       </p>
@@ -136,11 +147,11 @@
 
 
     <div
-      class="flex flex-col row-span-2 md:row-span-1 justify-end items-center py-2 w-full h-full bg-white w-full h-full bg-[url('./images/mobile/image-photography.jpg')] md: bg-[url('./images/desktop/image-photography.jpg')] bg-center bg-cover">
-      <h3 class="text-3xl font-bold mb-4 py-6"> Photography</h3>
-      <p class="text-gray-600 text-center max-w-md mb-4 px-6">
-       Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-  </p>
+      class="flex flex-col order-6 row-span-2 md:row-span-1 justify-end items-center py-2 w-full h-full bg-white w-full h-full bg-[url('./images/mobile/image-photography.jpg')] md: bg-[url('./images/desktop/image-photography.jpg')] bg-center bg-cover">
+      <h3 class="text-3xl text-center md:text-start font-bold font-[Fraunces] mb-4 px-10""> Photography</h3>
+      <p class="text-gray-600 text-sm md:text-base text-center md:text-start max-w-md mb-6 px-10 font-[burlow]">
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </p>
     </div>
   </section>
 
@@ -163,7 +174,8 @@
       <div class="flex flex-col items-center bg-white p-6 rounded-lg  max-w-xs text-center">
         <img src="./images/image-thomas.jpg" alt="Emily" class="w-24 h-24 rounded-full object-cover mb-4">
         <p class="text-gray-600 mb-4 font-semibold">
-       Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+          enjoyable experience.
         </p>
         <h3 class="text-xl font-bold mb-1">Thomas S.</h3>
         <p class="text-gray-500 text-sm">Chief Operating Officerr</p>
