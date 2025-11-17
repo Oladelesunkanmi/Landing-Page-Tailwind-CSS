@@ -9,46 +9,54 @@
 
 </head>
 
-<body class="bg-[#264ECA] flex items-center justify-center min-h-screen">
-  <div>
-    <img src="images/vector/Vector.png" alt="" class="top-2">
-  </div>
-    <div class=" p-8  w-80 text-center">
-      <div class="flex justify-center">
-        <img src="./images/Group.png" class="mb-15 w-40 alt=" login logo">
-      </div>
-      <div class="relative w-80">
-        <img src="./images/user.png" class="w-5 h-5 absolute left-3 top-2/5 -translate-y-1/2">
+<body class="bg-[#274FC7] flex items-center justify-center min-h-screen relative overflow-hidden">
 
-        <input type="password" placeholder="Password" class="w-full p-3 pl-10 mb-4 border border-gray-300 rounded 
-           focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-300">
-      </div>
-      <div class="relative w-80">
-        <img src="./images/lock.png" class="w-5 h-5 absolute left-3 top-2/5 -translate-y-1/2">
+  
+  <img src="images/vector/Vector.svg" 
+       class="absolute top-0 -right-40 brightness-110 opacity-100 pointer-events-none select-none z-50" />
 
-        <input type="password" placeholder="Password" class="w-full p-3 pl-10 mb-4 border border-gray-300 rounded 
-           focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-300">
-      </div>
+  <img src="images/vector/Ellipse.svg" class="absolute bottom-0 left-0 brightness-110 opacity-100 pointer-events-none select-none z-30">
+<img src="images/vector/Ellipse1.svg" class="absolute bottom-0 left-0 z-40" alt="">
+<img src="images/vector/Ellipse2.svg" class="absolute bottom-0 left-0 z-50" alt="">
+  <div class="p-8 w-80 text-center relative z-10">
 
-      <button
-        class="w-80 bg-white text-xl font-semibold uppercase mt-8 text-[#264ECA] py-3 rounded hover:bg-sky-400 transition-colors mb-4">Login</button>
-      <div class="flex w-80">
-
-        <div class="flex-1">
-          <a href="signup.html" class="text-white text-xl hover:underline block">
-            Sign Up
-          </a>
-        </div>
-
-        <div class="flex-1">
-          <a href="#" class="text-white text-xl hover:underline block text-right">
-            Forgot Password?
-          </a>
-        </div>
-      </div>
+    <div class="flex justify-center">
+      <img src="./images/Group.png" class="mb-15 w-40" alt="login logo">
     </div>
+
+    <!-- Username -->
+    <div class="relative w-80">
+      <img src="./images/user.png" class="w-5 h-5 absolute left-3 top-6 -translate-y-1/2">
+      <input type="text" placeholder="USERNAME"
+        class="w-full p-3 pl-10 mb-4 border border-gray-300 rounded 
+        focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-300">
+    </div>
+
+    <!-- Password -->
+    <div class="relative w-80">
+      <img src="./images/lock.png" class="w-5 h-5 absolute left-3 top-6 -translate-y-1/2">
+      <input type="password" placeholder="PASSWORD"
+        class="w-full p-3 pl-10 mb-4 border border-gray-300 rounded 
+        focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-300">
+    </div>
+
+    <button
+      class="w-80 bg-white text-xl font-semibold uppercase mt-8 text-[#264ECA] py-3 rounded hover:bg-sky-400 transition-colors mb-4">
+      Login
+    </button>
+
+    <div class="flex w-80">
+      <a href="signup.html" class="flex-1 text-white text-xl hover:underline">
+        Sign Up
+      </a>
+      <a href="#" class="flex-1 text-white text-xl hover:underline text-right">
+        Forgot Password?
+      </a>
+    </div>
+
   </div>
 
 </body>
+
 
 </html>
