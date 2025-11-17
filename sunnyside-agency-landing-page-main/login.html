@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-blue-500 flex items-center justify-center min-h-screen">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <div class="bg-white p-8 rounded-lg shadow-lg w-80 text-center">
-    <h2 class="text-2xl font-bold mb-6 text-gray-800">Login</h2>
-    
-    <input type="text" placeholder="Username" class="w-full p-3 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-500">
-    
-    <input type="password" placeholder="Password" class="w-full p-3 mb-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-sky-500">
-    
-    <button class="w-full bg-sky-600 text-white py-3 rounded hover:bg-sky-700 transition-colors mb-4">Login</button>
-    
-    <a href="#" class="text-sky-700 text-sm hover:underline">Forgot Password?</a>
+</head>
+
+<body class="bg-[#264ECA] flex items-center justify-center min-h-screen">
+  <div>
+    <img src="images/vector/Vector.png" alt="" class="top-2">
+  </div>
+    <div class=" p-8  w-80 text-center">
+      <div class="flex justify-center">
+        <img src="./images/Group.png" class="mb-15 w-40 alt=" login logo">
+      </div>
+      <div class="relative w-80">
+        <img src="./images/user.png" class="w-5 h-5 absolute left-3 top-2/5 -translate-y-1/2">
+
+        <input type="password" placeholder="Password" class="w-full p-3 pl-10 mb-4 border border-gray-300 rounded 
+           focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-300">
+      </div>
+      <div class="relative w-80">
+        <img src="./images/lock.png" class="w-5 h-5 absolute left-3 top-2/5 -translate-y-1/2">
+
+        <input type="password" placeholder="Password" class="w-full p-3 pl-10 mb-4 border border-gray-300 rounded 
+           focus:outline-none focus:ring-2 focus:ring-sky-500 placeholder-gray-300">
+      </div>
+
+      <button
+        class="w-80 bg-white text-xl font-semibold uppercase mt-8 text-[#264ECA] py-3 rounded hover:bg-sky-400 transition-colors mb-4">Login</button>
+      <div class="flex w-80">
+
+        <div class="flex-1">
+          <a href="signup.html" class="text-white text-xl hover:underline block">
+            Sign Up
+          </a>
+        </div>
+
+        <div class="flex-1">
+          <a href="#" class="text-white text-xl hover:underline block text-right">
+            Forgot Password?
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
+
 </html>
